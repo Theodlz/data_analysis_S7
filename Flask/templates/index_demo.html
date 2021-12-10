@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+
+
+</head>
+
+<body>
+
+  <!-- Main Input For Receiving Query to our ML -->
+  <div class="form-holder">
+    <div class="form-content">
+      <div class="form-items">
+        <h3>Predict household power consumption</h3>
+        <p>Fill in the data below to make a prediction of the next time step.</p>
+        <form action="{{ url_for('predict_all_variables')}}"method="post">
+          <table>
+            <tr id="timeframe_row">
+              <td>
+                <p>Durée de chaque time step :</p>
+              </td>
+              <td id="timeframe_buttons">
+                <div>
+                  <input type="radio" id="timeframe1" name="timeframe" value="1h" required="required">
+                  <label for="timeframe1">1h</label>
+                </div>
+                <div>
+                  <input type="radio" id="timeframe2" name="timeframe" value="3h" required="required" checked>
+                  <label for="timeframe2">3h</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="Global_active_power" placeholder="Last global active power" required="required" value="1.440911"/>
+              </td>
+              <td>
+                <input type="text" name="Global_reactive_power" placeholder="Last global reactive power" required="required" value="0.102200"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="Sub_metering_1" placeholder="Last sub metering 1" required="required" value="0"/>
+              </td>
+              <td>
+                <input type="text" name="Sub_metering_2" placeholder="Last sub metering 2" required="required" value="0.361111"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="Sub_metering_3" placeholder="Last sub metering 3" required="required" value="18.977778"/>
+              </td>
+              <td>
+                <input type="text" name="min_t" placeholder="Last min temperature" required="required" value="9.9"/>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" name="max_t" placeholder="Last max temperature" required="required" value="14.3"/>
+              </td>
+              <td>
+                <input type="datetime-local" name="DateTime" value="2009-10-10T06:00" required="required" />
+              </td>
+            </tr>            
+          </table>
+
+          <button id="submit" type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="prediction">
+    {{ prediction_text }}
+  </div>
+    
+    
+
+</body>
+</html>
