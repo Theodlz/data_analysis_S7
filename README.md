@@ -1,11 +1,12 @@
 # PYTHON FOR DATA ANALYSIS - HOUSEHOLD POWER CONSUMPTION
 
 ## Introduction (origin of the dataset, goal of the analysis and context):
-***
+
 #### In this data analysis project in python, we had to use the "household power consumption" dataset from ICS. This dataset contains different power consumption measures, sampled every minute. It contains : Global active power, Global reactive power, Global Intensity, Voltage, Sub_metering_1, Sub_metering_2 and Sub_metering_3. It also contains 2 time related variables : Date, and Time. The source is EDF, and the values correspond to the mean value of a minute. I contains values from december 2006 to december 2010, containing around 2 million rows.
 
 #### *source:* [Individual household electric power consumption Data Set, ICS](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
-***
+ 
+---
 
 #### The analysis has 2 goals : Solve a specific issue and display possible other usage of the dataset. 
 
@@ -16,19 +17,19 @@
 
 
 ## Preprocessing :
-***
+
 #### In the preprocessing, we cleaned the dataset, reformated certain variables and replaced missing values. We also added daily temperature data using web scrapping, and then saved the new datasets in a csv format, easily readable in the rest of our notebooks. 
 
 #### *More details in the notebook:* [data_preprocessing.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/pre_processing/data_preprocessing.ipynb)
 
 ## Imports :
-***
+
 #### For the vizualisation we will be using mostly pandas and matplotlib, but we also used vacances-scolaires-france from PyPi to retrieve the dates of every holiday in France in the right zone (C), so we can differentiate measures during a normal week (business days+weekends) a holiday, in some of our plots.
 #### For the modeling, we used Tensorflow for the LSTM models, sklearn for the Random Forest models, and statsmodels for the AR/ARIMA/SARIMA models.
 
 
 ## Data Vizualisation:
-***
+
 * In the first part our the data visualization, we started by visualizing all of our variables in different time resamplings (day, month, year...). It allowed us to see which variables are of interest adn which of them show anomalies/irregularities, which variables are correlated to the one we want to predict (Global Active Power), and how their pourcentage of correlation changes depending on the time sampling. 
 
 * In the second part of our analysis, a focus on the global active power and a series of required graphs to apply time series models accordingly. It allowed us to observe seasonality in the data, as well as determine the correlation between lagged variables and the current/future values. This analysis showed us that it is theorically possible to predict variables in the present or future using past data, as well as which parameters to use for some of our models (AR, ARIMA, SARIMA).
@@ -38,7 +39,7 @@
 #### *More details in the notebook:* [DATA_VISUALIZATION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/DATA_VISUALIZATION.ipynb)
 
 ## Modeling:
-***
+
 #### Insert Text Here
 
 #### *More details in the notebook:* [AUTO_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/AUTO_REGRESSION.ipynb)
@@ -48,7 +49,7 @@
 #### *More details in the notebook:* [RANDOM_FOREST_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/RANDOM_FOREST_REGRESSION.ipynb)
 
 ## Conclusion: What did we learn ?
-***
+
 #### About the problematic itself, we confirmed that it is possible to predict the electric consumption using different models in different time frames, both short term and long term, which solves both issues mentionned in the introduction. The modeling part of the project is a success and has solid bases and justification thanks to our time series analysis. Moreover, we observed that it is possible to look at the electrical consumption in detail to display hypothetic behavior of the members of an household.
 
 
