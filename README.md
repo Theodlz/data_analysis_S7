@@ -4,7 +4,7 @@
 
 #### In this data analysis project in python, we had to use the "household power consumption" dataset from ICS. This dataset contains different power consumption measures, sampled every minute. It contains : Global active power, Global reactive power, Global Intensity, Voltage, Sub_metering_1, Sub_metering_2 and Sub_metering_3. It also contains 2 time related variables : Date, and Time. The source is EDF, and the values correspond to the mean value of a minute. I contains values from december 2006 to december 2010, containing around 2 million rows.
 
-##### source : [Individual household electric power consumption Data Set, ICS](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
+#### *source:* [Individual household electric power consumption Data Set, ICS](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
 
 #### The analysis has 2 goals : Solve a specific issue and display possible other usage of the dataset. 
 
@@ -18,7 +18,7 @@
 
 #### In the preprocessing, we cleaned the dataset, reformated certain variables and replaced missing values. We also added daily temperature data using web scrapping, and then saved the new datasets in a csv format, easily readable in the rest of our notebooks. 
 
-##### More details in the notebook: [data_preprocessing.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/pre_processing/data_preprocessing.ipynb)
+#### *More details in the notebook:* [data_preprocessing.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/pre_processing/data_preprocessing.ipynb)
 
 ## Imports :
 
@@ -34,17 +34,17 @@
 
 #### ⋅⋅* The last part of our Data Visualization focuses not on the modeling, but on a different possible approach to this dataset : observing the evolution of values at smaller time scales to discover patterns, habits and usages of the member of the household, aka can we "spy" on someones daily life/routine just by looking at its electrical consumption ! If it is, a totally different project than ours could be done using models that uses the power consumption to analyse a family's routine and tell what they are doing at a given time. Turns out that it does seem to be possible, which we will see through in depth graphical interpretation over specific time periods.
 
-##### More details in the notebook: [DATA_VISUALIZATION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/DATA_VISUALIZATION.ipynb)
+#### *More details in the notebook:* [DATA_VISUALIZATION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/DATA_VISUALIZATION.ipynb)
 
 ## Modeling:
 
 #### Insert Text Here
 
-##### More details in the notebook: [AUTO_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/AUTO_REGRESSION.ipynb)
+#### *More details in the notebook:* [AUTO_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/AUTO_REGRESSION.ipynb)
 
-##### More details in the notebook: [LSTM.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/LSTM.ipynb)
+#### *More details in the notebook:* [LSTM.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/LSTM.ipynb)
 
-##### More details in the notebook: [RANDOM_FOREST_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/RANDOM_FOREST_REGRESSION.ipynb)
+#### *More details in the notebook:* [RANDOM_FOREST_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/RANDOM_FOREST_REGRESSION.ipynb)
 
 ## Conclusion: What did we learn ?
 
