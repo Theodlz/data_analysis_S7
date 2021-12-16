@@ -40,11 +40,15 @@
 
 ## Modeling:
 
-#### Insert Text Here
+* The first type of models we tried are auto regressive models, such as AR, ARIMA and SARIMA. Those models give us weekly forecasting of values using only a given timestamp as an input, but no past data, as past data is only necessary for the training phase in those models. The best and only accurate one is the SARIMA model, that encapsulates the the seasonality of the data from this dataset.
 
 #### *More details in the notebook:* [AUTO_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/AUTO_REGRESSION.ipynb)
 
+* Insert Text Here
+
 #### *More details in the notebook:* [LSTM.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/LSTM.ipynb)
+
+* Insert Text Here
 
 #### *More details in the notebook:* [RANDOM_FOREST_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/RANDOM_FOREST_REGRESSION.ipynb)
 
