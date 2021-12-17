@@ -1,6 +1,6 @@
 # PYTHON FOR DATA ANALYSIS - HOUSEHOLD POWER CONSUMPTION
 
-### This README is a very short summary of the results of the project, the jupyter notebooks mentionned in it (the links) are the documents containing the code but also the in-depth interpretation of our results, please do not forget to have a quick look at them !
+#### /!\ This README is a very short summary of the results of the project, the jupyter notebooks mentionned in it (the links) are the documents containing the code but also the in-depth interpretation of our results, please do not forget to have a quick look at them !
 
 ## Introduction (origin of the dataset, goal of the analysis and context):
 
