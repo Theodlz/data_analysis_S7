@@ -22,7 +22,9 @@
 
 #### In the preprocessing, we cleaned the dataset, reformated certain variables and replaced missing values. We also added daily temperature data using web scrapping, and then saved the new datasets in a csv format, easily readable in the rest of our notebooks. 
 
-#### *More details in the notebook:* [data_preprocessing.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/pre_processing/data_preprocessing.ipynb)
+#### /!\ You have to follow the instructions in the README as the dataset created in this notebook requires you to download files with a given link, and also creates the .csv file necessary to run all other notebooks
+
+#### *More details in the README:* [Pre-processing README](https://github.com/Theodlz/data_analysis_S7/tree/main/pre_processing#readme)
 
 ## Imports/requirements :
 
@@ -57,7 +59,8 @@
 
 #### We created a simple web interface using Flask, for the use of the Random Forest model for one step prediction. Here is a preview:
 ![Flask Interface Preview](https://github.com/Theodlz/data_analysis_S7/blob/main/Flask/interface_web_flask.PNG)
-#### *More details in the README:* [Flask README](https://github.com/Theodlz/data_analysis_S7/blob/main/Flask/README.md)
+
+#### *More details in the README:* [Flask README](https://github.com/Theodlz/data_analysis_S7/tree/main/Flask#readme)
 
 ## Conclusion: What did we learn ?
 
