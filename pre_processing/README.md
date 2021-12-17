@@ -5,4 +5,4 @@
 ### Before running the notebook :
 1. Download the dataset as a zip file [here](https://archive.ics.uci.edu/ml/machine-learning-databases/00235/household_power_consumption.zip)
 2. Unzip the downloaded file in this folder (/pre_processing)
-3. Run all cells and you are ready to run all other notebooks !
+3. Run all cells in both notebooks ('data_preprocessing' and 'get_temp_2006_to_2010') and you are ready to run all other notebooks !
