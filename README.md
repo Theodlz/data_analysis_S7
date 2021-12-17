@@ -10,9 +10,9 @@
 
 #### The analysis has 2 goals : Solve a specific issue and display possible other usage of the dataset. 
 
-#### The context is the following, we have to use the data of the power consumption of one household to be able to predict its consumption in the future. If it is possible, it will be highly useful for 2 reasons. First, for the household itself. For a household that use alternative source of energy as like solar panel, wind or geothermic, by predicting its future consumption, we can crossmatch the results with weather condition or other factor (or even only the consumption itself) to determine if they can afford to sell a part of the electricity they produce, without selling more than what they will use, and how much to sell. It will help them avoid to sell energy they would have used and having to buy energy from their supplier again, loosing their rentability or even rendering it negative. On the other side, if the supplier can forecast the power consumption of the households in its power grid, they can adapt their production in advance, therefor lowering costs of unnecessary production and avoiding shortage.
+#### The context is the following, we have to use the data of the power consumption of one household to be able to predict its consumption in the future. If it is possible, it will be highly useful for 2 reasons. First, for the household itself. For a household that possesses a local energy production system like solar panels or wind turbines, by predicting its future consumption, we can crossmatch the results with weather condition or other factors (or even only the consumption itself) to determine if they can afford to sell a part of the electricity they produce, without selling more than what they will use, and how much to sell. It will help them avoid to sell energy they would have used and having to buy energy from their supplier again, loosing their rentability or even rendering it negative. On the other side, if the supplier can forecast the power consumption of the households in its power grid, they can adapt their production in advance, therefor lowering costs of unnecessary production and avoiding shortage.
 
-#### Also, we will have a look in specific time frames of our data, to see if we can predict/guess a family's habits just by looking at their consumption, which could fro example be a way to target them with appropriate adversiting at the appropriate time, or to automate the start and stop of certain appliances to improve the overall power consumption of the household. It would also suggest the need for the supplier to improve the security/privacy of this data to not accidentaly give informations about its consumers.
+#### Also, we will have a look in specific time frames of our data, to see if we can predict/guess a family's habits just by looking at their consumption, which could for example be a way to target them with appropriate adversiting at the appropriate time, or to automate the start and stop of certain appliances to improve the overall power consumption of the household. It would also suggest the need for the supplier to improve the security/privacy of this data to not accidentaly give informations about its consumers.
 
 
 
@@ -25,7 +25,7 @@
 ## Imports :
 
 #### For the vizualisation we will be using mostly pandas and matplotlib, but we also used vacances-scolaires-france from PyPi to retrieve the dates of every holiday in France in the right zone (C), so we can differentiate measures during a normal week (business days+weekends) a holiday, in some of our plots.
-#### For the modeling, we used Tensorflow for the LSTM models, sklearn for the Random Forest models, and statsmodels for the AR/ARIMA/SARIMA models.
+#### For the modeling, we used Tensorflow for the LSTM models, scikit-learn for the Random Forest models, and statsmodels for the AR/ARIMA/SARIMA models.
 
 
 ## Data Vizualisation:
@@ -40,17 +40,19 @@
 
 ## Modeling:
 
-* The first type of models we tried are auto regressive models, such as AR, ARIMA and SARIMA. Those models give us weekly forecasting of values using only a given timestamp as an input, but no past data, as past data is only necessary for the training phase in those models. The best and only accurate one is the SARIMA model, that encapsulates the the seasonality of the data from this dataset.
+* The first type of models we tried are auto regressive models, such as AR, ARIMA and SARIMA. Those models give us weekly forecasting of values using only a given timestamp as an input, but no past data, as past data is only necessary for the training phase in those models. The best and only accurate one is the SARIMA model, that encapsulates the seasonality of the data from this dataset.
 
 #### *More details in the notebook:* [AUTO_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/AUTO_REGRESSION.ipynb)
 
-* Insert Text Here
+* For short term forecasting (minutes/hours/days) we developped LSTM models using Keras. To be able to learn and predict correctly, an additional processing on the dataset was necessary: the addition of 3 columns, holding the time of the day (Hour), the day of the week (Day), and the month of the year (Month).
 
 #### *More details in the notebook:* [LSTM.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/LSTM.ipynb)
 
-* Insert Text Here
+* We also created Random Forest models for short term forecasting. In addition to being able to predict the power consumption one step ahead, like the LSTM model, we implemented multistep forecasting using the Random Forrest models. It makes possible the prediction of several time steps ahead, from only one data point input. We can thus for example predict the consumption of a whole day, given 1 input of the early morning's consumption.
 
 #### *More details in the notebook:* [RANDOM_FOREST_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/RANDOM_FOREST_REGRESSION.ipynb)
+
+We created a simple web interface using Flask, for the use of the Random Forest model for one step prediction.
 
 ## Conclusion: What did we learn ?
 
