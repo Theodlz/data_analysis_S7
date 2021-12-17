@@ -56,6 +56,7 @@
 
 #### We created a simple web interface using Flask, for the use of the Random Forest model for one step prediction. Here is a preview:
 ![Flask Interface Preview](https://github.com/Theodlz/data_analysis_S7/blob/main/Flask/interface_web_flask.PNG)
+#### *More details in the README:* [Flask README](https://github.com/Theodlz/data_analysis_S7/blob/main/Flask/README.md)
 
 ## Conclusion: What did we learn ?
 
