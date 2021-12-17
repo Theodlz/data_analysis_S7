@@ -57,7 +57,9 @@
 
 #### *More details in the notebook:* [RANDOM_FOREST_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/RANDOM_FOREST_REGRESSION.ipynb)
 
-#### We created a simple web interface using Flask, for the use of the Random Forest model for one step prediction. Here is a preview:
+## Real World Application:
+
+#### We created a simple web interface using Flask, that uses the Random Forest model to  predict one step ahead. Here is a preview:
 ![Flask Interface Preview](https://github.com/Theodlz/data_analysis_S7/blob/main/Flask/interface_web_flask.PNG)
 
 #### *More details in the README:* [Flask README](https://github.com/Theodlz/data_analysis_S7/tree/main/Flask#readme)
