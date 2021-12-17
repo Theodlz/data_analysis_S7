@@ -48,5 +48,3 @@ def generate_temp_data():
         writer.writerow(["Date", "min_t", "max_t"])
         writer.writerows(zip(dates,temps_min,temps_max))
     print('download complete ! \n')
-
-generate_temp_data()
