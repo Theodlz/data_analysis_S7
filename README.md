@@ -24,10 +24,11 @@
 
 #### *More details in the notebook:* [data_preprocessing.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/pre_processing/data_preprocessing.ipynb)
 
-## Imports :
+## Imports/requirements :
 
 #### For the vizualisation we will be using mostly pandas and matplotlib, but we also used vacances-scolaires-france from PyPi to retrieve the dates of every holiday in France in the right zone (C), so we can differentiate measures during a normal week (business days+weekends) a holiday, in some of our plots.
 #### For the modeling, we used Tensorflow for the LSTM models, scikit-learn for the Random Forest models, and statsmodels for the AR/ARIMA/SARIMA models.
+#### Run "pip install -r requirements.txt" to install all the required modules for this project (we recommend creating a virtual environment beforehand).
 
 
 ## Data Vizualisation:
