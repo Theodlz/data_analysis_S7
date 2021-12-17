@@ -4,7 +4,15 @@
 
 ## Introduction (origin of the dataset, goal of the analysis and context):
 
-#### In this data analysis project in python, we had to use the "household power consumption" dataset from ICS. This dataset contains different power consumption measures, sampled every minute. It contains : Global active power, Global reactive power, Global Intensity, Voltage, Sub_metering_1, Sub_metering_2 and Sub_metering_3. It also contains 2 time related variables : Date, and Time. The source is EDF, and the values correspond to the mean value of a minute. I contains values from december 2006 to december 2010, containing around 2 million rows.
+#### In this data analysis project in python, we had to use the "household power consumption" dataset from ICS. This dataset contains different power consumption measures, sampled every minute. It contains : 
+1. Global active power - active energy consumed every minute (in watt hour)
+1. Global reactive power - reactive energy consumed every minute (in watt hour)
+1. Global Intensity - Intensity (P=U x I)
+1. Voltage - Voltage in the household (supposed to stay around 230V)
+1. Sub_metering_1 - Kitchen (mainly dishwasher, an oven and a microwave)
+1. Sub_metering_2 - Laundry room (mainly washer, dryer, refrigerator)
+1. Sub_metering_3 - Electric water-heater and an air-conditioner
+It also contains 2 time related variables : Date, and Time. The source is EDF, and the values correspond to the mean value of a minute. I contains values from december 2006 to december 2010, containing around 2 million rows.
 
 #### *source:* [Individual household electric power consumption Data Set, ICS](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
  
