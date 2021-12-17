@@ -12,7 +12,7 @@
 1. Sub_metering_1 - Kitchen (mainly dishwasher, an oven and a microwave)
 1. Sub_metering_2 - Laundry room (mainly washer, dryer, refrigerator)
 1. Sub_metering_3 - Electric water-heater and an air-conditioner
-It also contains 2 time related variables : Date, and Time. The source is EDF, and the values correspond to the mean value of a minute. I contains values from december 2006 to december 2010, containing around 2 million rows.
+#### It also contains 2 time related variables : Date, and Time. The source is EDF, and the values correspond to the mean value of a minute. I contains values from december 2006 to december 2010, containing around 2 million rows.
 
 #### *source:* [Individual household electric power consumption Data Set, ICS](https://archive.ics.uci.edu/ml/datasets/individual+household+electric+power+consumption)
  
