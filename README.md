@@ -63,19 +63,19 @@
 
 #### *More details in the notebook:* [LSTM.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/LSTM.ipynb)
 
-* We also created Random Forest models for short term forecasting. In addition to being able to predict the power consumption one step ahead, like the LSTM model, we implemented multistep forecasting using the Random Forrest models. It makes possible the prediction of several time steps ahead, from only one data point input. We can thus for example predict the consumption of a whole day, given 1 input of the early morning's consumption.
+* We also created Random Forest models for short term forecasting. In addition to being able to predict the power consumption one step ahead, like the LSTM model, we implemented multistep forecasting using multiple Random Forest models. It makes the prediction of several time steps ahead possible, taking only one data point as an input. Thus, for example, we can predict the consumption of a whole day, given 1 input of the early morning's consumption.
 
 #### *More details in the notebook:* [RANDOM_FOREST_REGRESSION.ipynb](https://github.com/Theodlz/data_analysis_S7/blob/main/RANDOM_FOREST_REGRESSION.ipynb)
 
 ## Real World Application:
 
-#### We created a simple web interface using Flask, that uses the Random Forest model to  predict one step ahead. Here is a preview:
+#### We created a simple web interface using Flask, that uses the Random Forest model to predict one step ahead. Here is a preview:
 ![Flask Interface Preview](https://github.com/Theodlz/data_analysis_S7/blob/main/Flask/interface_web_flask.PNG)
 
 #### *More details in the README:* [Flask README](https://github.com/Theodlz/data_analysis_S7/tree/main/Flask#readme)
 
 ## Conclusion: What did we learn ?
 
-#### About the problematic itself, we confirmed that it is possible to predict the electric consumption using different models in different time frames, both short term and long term, which solves both issues mentionned in the introduction. The modeling part of the project is a success and has solid bases and justification thanks to our time series analysis. Moreover, we observed that it is possible to look at the electrical consumption in detail to display hypothetic behavior of the members of an household.
+#### About the problematic itself, we confirmed that it is possible to predict the electric consumption using different models in different time frames, both short term and long term, which can be used to solve both issues mentionned in the introduction. The modeling part of the project is a success and has solid bases and justification thanks to our time series analysis. Moreover, we observed that it is possible to look at the electrical consumption in detail to display hypothetic behavior of the members of an household.
 
 
