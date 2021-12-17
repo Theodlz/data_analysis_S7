@@ -1,5 +1,7 @@
 # PYTHON FOR DATA ANALYSIS - HOUSEHOLD POWER CONSUMPTION
 
+### This README is a very short summary of the results of the project, the jupyter notebooks mentionned in it (the links) are the documents containing the code but also the in-depth interpretation of our results, please do not forget to have a quick look at them !
+
 ## Introduction (origin of the dataset, goal of the analysis and context):
 
 #### In this data analysis project in python, we had to use the "household power consumption" dataset from ICS. This dataset contains different power consumption measures, sampled every minute. It contains : Global active power, Global reactive power, Global Intensity, Voltage, Sub_metering_1, Sub_metering_2 and Sub_metering_3. It also contains 2 time related variables : Date, and Time. The source is EDF, and the values correspond to the mean value of a minute. I contains values from december 2006 to december 2010, containing around 2 million rows.
